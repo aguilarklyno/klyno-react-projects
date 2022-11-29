@@ -1,0 +1,17 @@
+const Navbar = () => {
+  const [nav, setNav] = useState(false)
+  
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
+  return (
+    <div>
+      <div onClick={handleNav} className="block md:hidden">
+          {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
+        <div className={!nav ? "fixed  bg-[#000300] ease-in-out duration-500" : "fixed left-[-100%]"}>
+      　</div>
+      </div>
+    </div>
+  )
+}
