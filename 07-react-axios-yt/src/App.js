@@ -1,4 +1,5 @@
 import React from 'react'
+import Time from './components/Time'
 import Weather from './components/Weather'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <Weather />
+      <Time />
     </div>
   )
 }
